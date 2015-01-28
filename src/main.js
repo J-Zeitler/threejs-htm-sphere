@@ -24,6 +24,42 @@ function init() {
   });
 
   /**
+   * Wireframe spheres
+   */
+  sphere = new THREE.Mesh(
+    new THREE.HTMSphereGeometry(1.0, 0),
+    new THREE.MeshBasicMaterial({
+      wireframe: true,
+      color: 'red'
+    })
+  );
+  scene.add(sphere);
+  sphere.position.x = -2.5;
+  sphere.position.y = 2.5;
+
+  sphere = new THREE.Mesh(
+    new THREE.HTMSphereGeometry(1.0, 1),
+    new THREE.MeshBasicMaterial({
+      wireframe: true,
+      color: 'red'
+    })
+  );
+  scene.add(sphere);
+  sphere.position.x = 0;
+  sphere.position.y = 2.5;
+
+  sphere = new THREE.Mesh(
+    new THREE.HTMSphereGeometry(1.0, 3),
+    new THREE.MeshBasicMaterial({
+      wireframe: true,
+      color: 'red'
+    })
+  );
+  scene.add(sphere);
+  sphere.position.x = 2.5;
+  sphere.position.y = 2.5;
+
+  /**
    * Ref spheres
    */
   sphere = new THREE.Mesh(
@@ -32,7 +68,7 @@ function init() {
   );
   scene.add(sphere);
   sphere.position.x = -2.5;
-  sphere.position.y = 1.5;
+  sphere.position.y = 0;
 
   sphere = new THREE.Mesh(
     new THREE.HTMSphereGeometry(1.0, 1),
@@ -40,7 +76,7 @@ function init() {
   );
   scene.add(sphere);
   sphere.position.x = 0;
-  sphere.position.y = 1.5;
+  sphere.position.y = 0;
 
   sphere = new THREE.Mesh(
     new THREE.HTMSphereGeometry(1.0, 3),
@@ -48,7 +84,7 @@ function init() {
   );
   scene.add(sphere);
   sphere.position.x = 2.5;
-  sphere.position.y = 1.5;
+  sphere.position.y = 0;
 
   /**
    * World map spheres
@@ -59,7 +95,7 @@ function init() {
   );
   scene.add(sphere);
   sphere.position.x = -2.5;
-  sphere.position.y = -1.5;
+  sphere.position.y = -2.5;
 
   sphere = new THREE.Mesh(
     new THREE.HTMSphereGeometry(1.0, 1),
@@ -67,7 +103,7 @@ function init() {
   );
   scene.add(sphere);
   sphere.position.x = 0;
-  sphere.position.y = -1.5;
+  sphere.position.y = -2.5;
 
   sphere = new THREE.Mesh(
     new THREE.HTMSphereGeometry(1.0, 3),
@@ -75,7 +111,7 @@ function init() {
   );
   scene.add(sphere);
   sphere.position.x = 2.5;
-  sphere.position.y = -1.5;
+  sphere.position.y = -2.5;
 
   renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
