@@ -8,4 +8,13 @@ Complete with examples!
 ## Usage
 ```javascript
 var myHTMSphereGeometry = new THREE.HTMSphereGeometry(radius, subdivisionLevels);
+var toastMaterial = new THREE.MeshPhongMaterial({
+  map: THREE.ImageUtils.loadTexture('toast.jpg')
+});
+var myHTMSphere = new THREE.Mesh(
+  myHTMSphereGeometry,
+  toastMaterial
+);
 ```
+
+![toast.jpg](textures/ref.png)
