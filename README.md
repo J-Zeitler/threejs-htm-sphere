@@ -9,7 +9,7 @@ Complete with examples!
 ```javascript
 var myHTMSphereGeometry = new THREE.HTMSphereGeometry(radius, subdivisionLevels);
 var toastMaterial = new THREE.MeshPhongMaterial({
-  map: THREE.ImageUtils.loadTexture('toast.jpg')
+  map: THREE.ImageUtils.loadTexture('ref.png')
 });
 var myHTMSphere = new THREE.Mesh(
   myHTMSphereGeometry,
@@ -17,4 +17,6 @@ var myHTMSphere = new THREE.Mesh(
 );
 ```
 
-![toast.jpg](textures/ref.png)
+![ref.png](src/textures/ref.png)
+
+*ref.png*
