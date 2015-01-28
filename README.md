@@ -17,4 +17,4 @@ var myHTMSphere = new THREE.Mesh(
 );
 ```
 
-![toast.jpg](textures/ref.png)
+![toast.jpg](src/textures/ref.png)
